@@ -244,7 +244,7 @@ static NSString *const kCheckOutIPURL = @"";
  */
 - (void)recordLocalNetEnvironment
 {
-    [self recordStepInfo:[NSString stringWithFormat:@"\n\nDiagnose domain %@...\n", _dormain]];
+    [self recordStepInfo:[NSString stringWithFormat:@"\n\nDiagnose IP %@...\n", _dormain]];
     //判断是否联网以及获取网络类型
     NSArray *typeArr = [NSArray arrayWithObjects:@"2G", @"3G", @"4G", @"5G", @"wifi", nil];
     _curNetType = [LDNetGetAddress getNetworkTypeFromStatusBar];
